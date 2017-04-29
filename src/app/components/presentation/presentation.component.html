@@ -1,0 +1,22 @@
+<div id="presentation">
+    <div  id="presentation-header" (click)="toggleContent();"class="box-header-1">
+        <div class="presentation-title">Presentation</div>
+        <img [@rotateTriangle]="openOrClose" class="presentation-triangle"src="assets/images/triangle.png"/>
+    </div>
+
+    <div id="presentation-content" [@verticalOpen]="openOrClose">
+        <p>Here some examples:<br>
+            <span class="snippet">ng generate component my-new-component
+                ng g component my-new-component # using the alias
+
+                # components support relative path generation<br>
+                # if in the directory src/app/feature/ and you run<br>
+                ng g component new-cmp<br>
+                # your component will be generated in src/app/feature/new-cmp<br>
+                # but if you were to run<br>
+                ng g component ../newer-cmp<br>
+                # your component will be generated in src/app/newer-cmp
+            </span>
+        </p>
+    </div>
+</div>

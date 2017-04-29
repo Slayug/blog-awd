@@ -1,0 +1,110 @@
+@import "variables.scss";
+
+a{
+    color: $a-color;
+    text-decoration: none;
+}
+a:hover{
+    color: $a-color-hover;
+}
+nav a{
+    color:black;
+}
+.box-header-1{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    border-bottom: 2px solid $primary-gray;
+    color: $primary-gray;
+    font-size: 1.3em;
+}
+.box-header-2{
+    background-color: rgb(68, 68, 68);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 4px;
+    border-bottom: 2px solid $primary-green;
+    color: white;
+}
+.box-header h1, h2, h3, h4{
+    padding: 0px;
+    margin: 0px;
+
+}
+.snippet{
+    background-color: #F6F8FA;
+    display: block;
+    padding: 10px;
+
+    font: 12px Consolas, "SFMono-Regular", "Liberation Mono", Menlo, Courier, monospace;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 5px;
+}
+.rect-bounded{
+    background-color: $primary-gray;
+    width: 60px;
+    height: 7px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    box-shadow: inset 0px 0px 12px #232323;
+}
+.back{
+    cursor: pointer;
+    background-color: #F6F8FA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.cross {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    box-shadow: inset 0px 0px 12px #232323;
+    width: 40px;
+    height: 6px;
+    position: relative;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.cross:before {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 6px;
+    background: white;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.triangle-down-border{
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 17px solid $primary-gray;
+
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid $primary-green;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 1px;
+}

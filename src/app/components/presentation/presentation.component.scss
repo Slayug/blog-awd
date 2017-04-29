@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+@import "../../style.scss";
+#content-left #presentation{
+    background-color: red;
+}
+#presentation{
+}
+#presentation-header{
+
+    @media screen and (max-width: $break-medium) {
+        margin-top:4px;
+        padding-bottom: 10px;
+    }
+}
+.presentation-title{
+    @media screen and (max-width: $break-medium) {
+        float: left;
+        margin-right: 10px;
+    }
+
+}
+#presentation-header h4{
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+.presentation-triangle{
+    display: none;
+    @media screen and (max-width: $break-medium) {
+        display: block;
+        height: 16px;
+        margin-top: 3px;
+
+    }
+}
+.presentation-triangle img{
+}
+#presentation-content{
+    padding-left: 4px;
+    padding-right: 4px;
+    @media screen and (min-width: $break-medium) {
+        height: 200px;
+    }
+
+}

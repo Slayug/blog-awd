@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+#bottom{
+    width: 100%;
+    border-top: 2px $primary-gray solid;
+    height: 70px;
+    margin: auto;
+}
+#bottom img{
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;
+}

@@ -1,0 +1,20 @@
+<section id="articles">
+    <div class="box-header-1">Articles</div>
+
+
+    <div *ngIf="articles">
+        <article class="article " *ngFor="let article of articles" >
+            <!-- [routerLink]="['/new', new.id]"> -->
+            <a [routerLink]="['/article', article.id]"><div class="box-header-2">{{ article.title }}</div></a>
+
+
+            <div class="article-content">
+                <a [routerLink]="['/article', article.id]">
+                    <div title="{{ article.title }} thumbnail" class="article-thumbnail" [ngStyle]="{ 'background-image': 'url(' + article.thumbnail + ')'}"></div>
+                </a>
+                <span [innerHTML]="resumeArticle( article.content )"><a [routerLink]="['/article', article.id]">..></a></span>
+            </div>
+        </article>
+
+    </div>
+</section>

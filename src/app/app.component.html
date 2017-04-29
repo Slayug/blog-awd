@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+
+<div [@horizontalOpen]="openOrClose"  id="nav-bar-mobile">
+    <app-nav-bar (requestCloseNavBar)="toggleNavBar($event)"></app-nav-bar>
+</div>
+
+<app-top (requestOpenNavBar)="toggleNavBar($event)" ></app-top>
+
+<div (click)="closeNavBar();$event.stopPropagation()" id="wrapper">
+    <div id="content">
+        <div id="content-left">
+            <app-presentation></app-presentation>
+            <router-outlet></router-outlet>
+        </div>
+        <div id="content-right">
+            <app-presentation></app-presentation>
+            <app-categories></app-categories>
+            <app-bottom></app-bottom>
+        </div>
+    </div>
+</div>

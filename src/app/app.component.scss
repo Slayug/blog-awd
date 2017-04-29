@@ -1,0 +1,58 @@
+@import "variables.scss";
+@import "style.scss";
+
+$content-righ-width: 60%;
+
+
+#content{
+    @media screen and (min-width: $break-large + 1px) {
+        width: $content-width;
+        border-right: 2px solid $primary-gray;
+        border-left: 2px solid $primary-gray;
+        min-height: 90vh;
+    }
+
+    @media screen and (min-width: $break-medium)
+    and (max-width: $break-large  ){
+        border-right: 2px solid $primary-gray;
+        border-left: 2px solid $primary-gray;
+        width: 100%;
+    }
+
+    margin: auto;
+
+}
+#content-right{
+    float: right;
+    border-left: 2px solid $primary-gray;
+    border-bottom: 2px solid $primary-gray;
+    width: 100% - $content-righ-width - 1%;
+    @media screen and (max-width: $break-medium) {
+        display: none;
+    }
+}
+#content-left{
+    float:left;
+    display: block;
+    width: $content-righ-width;
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
+}
+#content #presentation{
+    display: none;
+    background-color: red;
+}
+#nav-bar-mobile{
+    height: 100%;
+    z-index: 9999;
+    width: 210px;
+    background-color: white;
+    position: absolute;
+    border-right: 2px solid $primary-gray;
+    -webkit-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.54);
+    box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.54);
+    left: -300px;
+
+}
