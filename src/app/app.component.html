@@ -1,11 +1,10 @@
-
 <div [@horizontalOpen]="openOrClose"  id="nav-bar-mobile">
-    <app-nav-bar (requestCloseNavBar)="toggleNavBar($event)"></app-nav-bar>
+    <app-nav-bar (requestCloseNavBar)="toggleNavBar()"></app-nav-bar>
 </div>
 
-<app-top (requestOpenNavBar)="toggleNavBar($event)" ></app-top>
+<app-top (requestOpenNavBar)="toggleNavBar()" ></app-top>
 
-<div (click)="closeNavBar();$event.stopPropagation()" id="wrapper">
+<div (click)="closeNavBar();" id="wrapper">
     <div id="content">
         <div id="content-left">
             <app-presentation></app-presentation>

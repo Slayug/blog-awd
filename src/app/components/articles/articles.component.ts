@@ -9,7 +9,7 @@ import { Article } from '../../entity/Article';
 })
 export class ArticlesComponent implements OnInit {
 
-    private articles: Article[];
+    public articles: Article[];
 
     constructor(
         private articleService: ArticlesService
