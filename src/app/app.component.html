@@ -7,11 +7,11 @@
 <div (click)="closeNavBar();" id="wrapper">
     <div id="content">
         <div id="content-left">
-            <app-presentation></app-presentation>
+            <app-presentation id="presentation-mobile"></app-presentation>
             <router-outlet></router-outlet>
         </div>
         <div id="content-right">
-            <app-presentation></app-presentation>
+            <app-presentation [contentShouldNotBeOpen]="false"></app-presentation>
             <app-categories></app-categories>
             <app-bottom></app-bottom>
         </div>

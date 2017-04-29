@@ -39,10 +39,6 @@ $content-righ-width: 60%;
         width: 100%;
     }
 }
-#content #presentation{
-    display: none;
-    background-color: red;
-}
 #nav-bar-mobile{
     height: 100%;
     z-index: 9999;
@@ -54,5 +50,11 @@ $content-righ-width: 60%;
     -moz-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.54);
     box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.54);
     left: -300px;
+
+}
+#presentation-mobile{
+    @media screen and (min-width: $break-medium) {
+        display: none;
+    }
 
 }

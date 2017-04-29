@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {
     trigger,
     state,
@@ -38,11 +38,14 @@ import {
 export class PresentationComponent implements OnInit {
 
     openOrClose:string;
+    @Input() contentShouldNotBeOpen: boolean = true;
 
     constructor() { }
 
     ngOnInit() {
-        this.toggleContent();
+        if( this.contentShouldNotBeOpen ){
+            this.toggleContent();
+        }
     }
     toggleContent(): void{
         if(this.openOrClose == 'inactive'){
