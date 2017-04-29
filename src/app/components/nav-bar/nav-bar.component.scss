@@ -88,9 +88,11 @@ nav{
 .router-link-active{
     background-color: $primary-green;
     @media screen and (max-width: $break-medium){
-        width: 105%;
         border-top: 1px solid #232323;
         border-bottom: 1px solid #232323;
-        border-right: 1px solid #232323;
     }
+}
+.cross:hover{
+
+    background-color: rgb(60, 100, 60);
 }
