@@ -15,12 +15,12 @@ import {
     animations:[
         trigger('horizontalOpen',[
             state('inactive',style({
-                transform: 'translateX(-300px)',
+                transform: 'translateX(-210px)',
                 display: 'none'
             })),
             state('active',style({
                 display: 'block',
-                transform: 'translateX(300px)'
+                transform: 'translateX(210px)'
             })),
             transition('active => inactive', animate('1000ms ease-in')),
             transition('inactive => active', animate('1000ms ease-out'))
@@ -47,6 +47,7 @@ export class AppComponent {
     }
 
     closeNavBar(): void{
+        console.log("closeNavBar");
         if(this.openOrClose == 'active'){
             this.openOrClose = 'inactive'
         }

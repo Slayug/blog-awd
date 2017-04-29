@@ -2,7 +2,10 @@
     <app-nav-bar (requestCloseNavBar)="toggleNavBar()"></app-nav-bar>
 </div>
 
-<app-top (requestOpenNavBar)="toggleNavBar()" ></app-top>
+<app-top
+(requestOpenNavBar)="toggleNavBar()"
+(requestCloseNavBar)="closeNavBar()">
+</app-top>
 
 <div (click)="closeNavBar();" id="wrapper">
     <div id="content">
