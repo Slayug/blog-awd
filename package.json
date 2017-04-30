@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
-        "postinstall": "./node_module/bower/bin/bower install",
+        "postinstall": "./node_modules/bower/bin/bower install",
         "prestart": "npm install",
         "ng": "ng",
         "start": "http-server -a localhost -p 8000 -c-1 ./app",
