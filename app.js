@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-const INDEX_PATH = '/dist/index.html';
+const INDEX_PATH = '/src/index.html';
 
 app.use(express.static(__dirname + '/app'));
 app.listen(process.env.PORT || 3000 );
