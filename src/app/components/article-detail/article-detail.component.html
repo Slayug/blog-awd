@@ -2,9 +2,9 @@
     <article>
         <div class="box-header-1">
             <span class="back" (click)="goBack()">Articles ></span>
-            <!-- <div class="article-thumbnail" [ngStyle]="{ 'background-image': 'url(' + article.thumbnail + ')'}"></div> -->
             {{ article.title }}
         </div>
+        <div class="thumbnail" [ngStyle]="{ 'background-image': 'url(' + article.thumbnail + ')'}"></div>
         <p class="content" [innerHTML]="article.content"></p>
     </article>
 </section>

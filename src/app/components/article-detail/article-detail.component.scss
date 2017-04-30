@@ -8,14 +8,19 @@ article .content{
     line-height: 1.5;
 }
 article .thumbnail{
-    float:left;
-    margin-right: 10px;
 
-    width: 30%;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    width: 90%;
     height: 200px;
     background-size: cover;
     border: 2px solid $primary-gray;
     background-position: center;
+
+    @media screen and (max-width: $break-medium){
+        height: 150px;
+    }
 
 }
 

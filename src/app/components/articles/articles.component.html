@@ -4,7 +4,6 @@
 
     <div *ngIf="articles">
         <article class="article " *ngFor="let article of articles" >
-            <!-- [routerLink]="['/new', new.id]"> -->
             <a [routerLink]="['/article', article.id]"><div class="box-header-2">{{ article.title }}</div></a>
 
 
