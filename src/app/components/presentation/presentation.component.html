@@ -1,7 +1,7 @@
 <div id="presentation">
     <div  id="presentation-header" (click)="toggleContent();"class="box-header-1">
         <div class="presentation-title">Presentation</div>
-        <img [@rotateTriangle]="openOrClose" class="presentation-triangle"src="assets/images/triangle.png"/>
+        <img alt="loading circle" [@rotateTriangle]="openOrClose" class="presentation-triangle" src="assets/images/triangle.png"/>
     </div>
 
     <div id="presentation-content" [@verticalOpen]="openOrClose">
