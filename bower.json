@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-awd",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Slayug <bug.graph@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Slayug/blog-awd",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
