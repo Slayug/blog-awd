@@ -15,3 +15,5 @@
     <div class="nav-button" (click)="closeNavBar()" routerLinkActive="router-link-active" [routerLink]="['/cv']">CV</div>
     <div class="nav-button" (click)="closeNavBar()" routerLinkActive="router-link-active" [routerLink]="['/contact']" >Contact</div>
 </nav>
+
+<app-bottom *ngIf="isMobileVersion()"></app-bottom>

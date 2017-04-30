@@ -9,5 +9,11 @@
 #bottom img{
     margin-top: 10px;
     margin-left: 10px;
+    cursor: pointer;
     float:left;
+    transition: all .2s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
 }

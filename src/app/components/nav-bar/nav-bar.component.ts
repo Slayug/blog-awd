@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
     selector: 'app-nav-bar',
@@ -9,14 +9,19 @@ export class NavBarComponent implements OnInit {
 
     @Output() public requestCloseNavBar: EventEmitter<any> = new EventEmitter();
 
+    @Input() mobileVersion: boolean;
+
     constructor() { }
 
     ngOnInit() {
     }
 
-
     closeNavBar(){
         this.requestCloseNavBar.emit(null);
+    }
+
+    isMobileVersion(): boolean{
+        return  this.mobileVersion;
     }
 
 }

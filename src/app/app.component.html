@@ -1,5 +1,5 @@
 <div [@horizontalOpen]="openOrClose"  id="nav-bar-mobile">
-    <app-nav-bar (requestCloseNavBar)="toggleNavBar()"></app-nav-bar>
+    <app-nav-bar [mobileVersion]="true" (requestCloseNavBar)="toggleNavBar()"></app-nav-bar>
 </div>
 
 <app-top
