@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "ng": "ng",
-    "start": "http-server -a localhost -p 80 -c-1 ./app",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
