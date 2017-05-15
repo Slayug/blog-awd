@@ -16,6 +16,7 @@ import { TopComponent } from './components/top/top.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { BottomComponent } from './components/bottom/bottom.component';
 import { ArticlesService } from './services/articles.service';
+import { ProjectsService } from './services/projects.service';
 
 
 import { RouterModule }   from '@angular/router';
@@ -50,7 +51,7 @@ import { CvComponent } from './components/cv/cv.component';
         AppRoutingModule
 
     ],
-    providers: [ArticlesService],
+    providers: [ArticlesService, ProjectsService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

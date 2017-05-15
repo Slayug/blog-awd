@@ -11,7 +11,7 @@ export class ProjectsService {
 
     constructor(private http: Http) { }
 
-    getArticles(): Promise<Project[]> {
+    getProjects(): Promise<Project[]> {
         return this.http.get(this.projectsUrl)
         .toPromise()
         .then(response => response.json().data as Project[])
@@ -19,7 +19,7 @@ export class ProjectsService {
     }
 
 
-    getArticle(id: number): Promise<Project> {
+    getProject(id: number): Promise<Project> {
         const url = `${this.projectsUrl}/${id}`;
         return this.http.get(url)
         .toPromise()

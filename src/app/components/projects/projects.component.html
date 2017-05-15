@@ -3,7 +3,7 @@
     <div class="box-header-1">Projects</div>
 
 
-    <div *ngIf="articles">
+    <div *ngIf="projects">
         <article class="project" *ngFor="let project of projects" >
             <a [routerLink]="['/project', project.id]"><div class="box-header-2">{{ project.title }}</div></a>
 

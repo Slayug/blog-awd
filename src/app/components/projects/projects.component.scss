@@ -24,3 +24,21 @@
         height: 80px;
     }
 }
+.project{
+    border: solid 1px #232323;
+    margin: 5px;
+    min-height: 170px;
+
+    @media screen and (max-width: $break-medium){
+        margin: 0px;
+        border: 0px;
+    }
+
+}
+.project-content{
+    padding: 10px;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1em;
+    line-height: 1.3;
+}
