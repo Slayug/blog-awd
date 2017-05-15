@@ -47,7 +47,6 @@ export class AppComponent {
     }
 
     closeNavBar(): void{
-        console.log("closeNavBar");
         if(this.openOrClose == 'active'){
             this.openOrClose = 'inactive'
         }
