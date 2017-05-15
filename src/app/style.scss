@@ -10,6 +10,13 @@ a:hover{
 nav a{
     color:black;
 }
+:host /deep/ a{
+    color: $a-color;
+    text-decoration: none;
+}
+:host /deep/ a{
+    color: $a-color-hover;
+}
 .box-header-1{
     padding-top: 7px;
     padding-bottom: 7px;

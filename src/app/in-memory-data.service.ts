@@ -26,8 +26,20 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 0,
                 title: 'tnsg',
                 thumbnail: 'https://webdesignledger.com/wp-content/uploads/2015/08/nativescript_logo.png',
-                content: "https://github.com/Slayug/tnsg<br/>A NativeScript CLI Generator <br/> Generate quickly your pages, services, class.."
+                content: "A NativeScript CLI Generator <br/> Generate quickly your pages, services, class..<br/><a href='https://github.com/Slayug/tnsg'>Github</a>,<br/><a href='https://npmjs.com/package/tnsg'>npm package</a>."
             },
+            {
+                id: 1,
+                title: 'Tongue',
+                thumbnail: 'https://s-media-cache-ak0.pinimg.com/736x/31/95/70/31957007b62c771312d9db4a8e719d77.jpg',
+                content: "Manage yours translations dynamically on your website. No reload page !<br/><a href='http://buuuuug.ddns.net/tongue/'>Demo</a>,<br/><a href='https://github.com/Slayug/'>Github</a>"
+            },
+            {
+                id: 2,
+                title: 'ancor2',
+                thumbnail: '',
+                content: "Ce projet s'est déroulé autour du context du projet <a href='http://tln.li.univ-tours.fr/Tln_Corpus_Ancor.html'>Ancor</a> Le logiciel a été conçu dans l’objectif de convertir des corpus annotés en anaphore dans le cadre du projet Ancor. Les corpus ciblés ont été annotés avec le logiciel Glozz."
+            }
         ];
         return { articles, projects };
     }
