@@ -1,3 +1,21 @@
-<p>
-  projects works!
-</p>
+<section id="projects">
+
+    <div class="box-header-1">Projects</div>
+
+
+    <div *ngIf="articles">
+        <article class="project" *ngFor="let project of projects" >
+            <a [routerLink]="['/project', project.id]"><div class="box-header-2">{{ project.title }}</div></a>
+
+
+            <div class="project-content">
+                <a [routerLink]="['/project', project.id]">
+                    <div title="{{ project.title }} thumbnail" class="project-thumbnail" [ngStyle]="{ 'background-image': 'url(' + project.thumbnail + ')'}"></div>
+                </a>
+                <span [innerHTML]="resumeArticle( project.content )"><a [routerLink]="['/project', project.id]">..></a></span>
+            </div>
+        </article>
+
+    </div>
+
+</section>

@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+@import "../../style.scss";
+.project-thumbnail{
+    float:left;
+    margin-right: 10px;
+
+    width: 20%;
+    height: 100px;
+    background-size: cover;
+    border: 2px solid $primary-gray;
+    background-position: center;
+
+
+    @media screen and (max-width: $break-medium) and
+            (min-width: 600px){
+        width: 15%;
+        height: 100px;
+
+    }
+
+
+    @media screen and (max-width: 600px) {
+        width: 20%;
+        height: 80px;
+    }
+}
