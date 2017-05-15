@@ -1,3 +1,10 @@
-<p>
-  project-detail works!
-</p>
+<section *ngIf="project">
+    <article>
+        <div class="box-header-1">
+            <span class="back" (click)="goBack()">Projects ></span>
+            {{ project.title }}
+        </div>
+        <div class="thumbnail" [ngStyle]="{ 'background-image': 'url(' + project.thumbnail + ')'}"></div>
+        <p class="content" [innerHTML]="project.content"></p>
+    </article>
+</section>

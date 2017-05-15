@@ -21,6 +21,7 @@ export class ProjectsService {
 
     getProject(id: number): Promise<Project> {
         const url = `${this.projectsUrl}/${id}`;
+        console.log( url );
         return this.http.get(url)
         .toPromise()
         .then(response => response.json().data as Project)

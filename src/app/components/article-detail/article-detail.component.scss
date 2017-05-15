@@ -23,16 +23,3 @@ article .thumbnail{
     }
 
 }
-
-:host /deep/ .snippet{
-    background-color: #F6F8FA;
-    display: block;
-    padding: 10px;
-
-    font: 12px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border: 5px;
-
-}
