@@ -8,6 +8,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 import { CvComponent } from './components/cv/cv.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/articles', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'article/:id', component: ArticleDetailComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'project/:id', component: ProjectDetailComponent },
-  { path: 'cv', component: CvComponent }
+  { path: 'cv', component: CvComponent },
+  { path: 'contact', component: ContactComponent }
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
