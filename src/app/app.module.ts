@@ -26,6 +26,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 import { CvComponent } from './components/cv/cv.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { CvComponent } from './components/cv/cv.component';
         ProjectsComponent,
         ProjectDetailComponent,
         CvComponent,
+        ContactComponent,
     ],
     imports: [
         BrowserModule,
