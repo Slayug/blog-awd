@@ -18,7 +18,7 @@ import {
             })),
             state('active',style({
                 display: 'block',
-                height: '200px'
+                height: '140px'
             })),
             transition('active => inactive', animate('600ms ease-in')),
             transition('inactive => active', animate('600ms ease-out'))
