@@ -14,8 +14,6 @@ $content-righ-width: 60%;
 
     @media screen and (min-width: $break-medium)
     and (max-width: $break-large  ){
-        border-right: 2px solid $primary-gray;
-        border-left: 2px solid $primary-gray;
         width: 100%;
     }
 
